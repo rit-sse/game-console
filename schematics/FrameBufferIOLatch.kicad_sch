@@ -1826,6 +1826,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Only the MPU will read\nDMA will write as long\nas FrameBuff belongs to\nit. MPU will write as long\nas its not in Write Mode"
+		(exclude_from_sim no)
+		(at 178.816 49.022 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7ff46163-59e6-45b9-8484-4da239eb5c45")
+	)
 	(junction
 		(at 194.31 55.88)
 		(diameter 0)
@@ -2378,16 +2388,6 @@
 		)
 		(uuid "14827cc6-0c0a-4a8a-b16d-42ec3295323a")
 	)
-	(wire
-		(pts
-			(xy 166.37 34.29) (xy 166.37 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "15e60f98-3436-451a-ae78-01ea7676c28a")
-	)
 	(bus
 		(pts
 			(xy 156.21 116.84) (xy 158.75 116.84)
@@ -2910,7 +2910,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 50.8) (xy 166.37 57.15)
+			(xy 166.37 34.29) (xy 166.37 57.15)
 		)
 		(stroke
 			(width 0)
@@ -3822,7 +3822,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "684ce2a9-3db4-4dab-9f9f-7adb8d7e6ca9")
-		(property "Reference" "U"
+		(property "Reference" "U?"
 			(at 173.99 63.4916 90)
 			(effects
 				(font
@@ -3912,6 +3912,10 @@
 		)
 		(instances
 			(project "schematics"
+				(path "/1efac021-92d6-4a06-9a24-324f43ef2e7c/41bec2cb-0554-4545-a462-c7b731f22bcb"
+					(reference "U?")
+					(unit 1)
+				)
 				(path "/1efac021-92d6-4a06-9a24-324f43ef2e7c/ee9412b5-3f4d-4d26-8e91-e1a9764d02f4"
 					(reference "U172")
 					(unit 1)
@@ -4104,25 +4108,25 @@
 			)
 		)
 		(pin "7"
-			(uuid "dfa6242e-62dd-4007-8992-d7d7eb2d8d2b")
+			(uuid "dfa6242e-62dd-4007-8992-d7d7eb2d8d2c")
 		)
 		(pin "11"
-			(uuid "b6c4b935-1765-4c08-897c-2185a385a356")
+			(uuid "b6c4b935-1765-4c08-897c-2185a385a357")
 		)
 		(pin "13"
-			(uuid "3a164e86-4e28-4845-a819-92fec7c372c7")
+			(uuid "3a164e86-4e28-4845-a819-92fec7c372c8")
 		)
 		(pin "5"
-			(uuid "462a1bee-5f59-43c7-9502-d7e5c735448d")
+			(uuid "462a1bee-5f59-43c7-9502-d7e5c735448e")
 		)
 		(pin "12"
-			(uuid "272b19b9-891d-47fc-b46d-0fbca6e6a76c")
+			(uuid "272b19b9-891d-47fc-b46d-0fbca6e6a76d")
 		)
 		(pin "14"
-			(uuid "48c5a5c3-5c1e-4a50-8a74-e680ba31f7bf")
+			(uuid "48c5a5c3-5c1e-4a50-8a74-e680ba31f7c0")
 		)
 		(pin "8"
-			(uuid "5d43bf58-0729-46c8-b884-c166b26e6317")
+			(uuid "5d43bf58-0729-46c8-b884-c166b26e6318")
 		)
 		(pin "3"
 			(uuid "0dc70f81-34c4-4f3c-a4d0-ad463716fd05")
@@ -4131,16 +4135,16 @@
 			(uuid "edcdcc7e-1e40-40cb-a8c5-4e1a8dee2c31")
 		)
 		(pin "6"
-			(uuid "ac72e68d-92bd-4d67-878d-1a758d0536b1")
+			(uuid "ac72e68d-92bd-4d67-878d-1a758d0536b2")
 		)
 		(pin "9"
-			(uuid "a24a4a5c-b98d-4391-91c0-32ca4b63b184")
+			(uuid "a24a4a5c-b98d-4391-91c0-32ca4b63b185")
 		)
 		(pin "10"
-			(uuid "494d5137-6211-4483-beba-6c8219f5f066")
+			(uuid "494d5137-6211-4483-beba-6c8219f5f067")
 		)
 		(pin "4"
-			(uuid "96b1361c-8a1f-413d-a7ab-3efa6bf00f61")
+			(uuid "96b1361c-8a1f-413d-a7ab-3efa6bf00f62")
 		)
 		(pin "2"
 			(uuid "cef8bb73-5655-4da5-835f-8e284a659156")
@@ -4278,7 +4282,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d901202f-d6b9-4cb2-b9d3-a1f42df73289")
-		(property "Reference" "CD74HCT"
+		(property "Reference" "CD74HCT?"
 			(at 97.79 97.7901 90)
 			(effects
 				(font
@@ -4385,118 +4389,12 @@
 		)
 		(instances
 			(project "schematics"
+				(path "/1efac021-92d6-4a06-9a24-324f43ef2e7c/41bec2cb-0554-4545-a462-c7b731f22bcb"
+					(reference "CD74HCT?")
+					(unit 1)
+				)
 				(path "/1efac021-92d6-4a06-9a24-324f43ef2e7c/ee9412b5-3f4d-4d26-8e91-e1a9764d02f4"
 					(reference "CD74HCT32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "4xxx:4069")
-		(at 166.37 43.18 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "def5a411-dd3d-4dac-afe5-18b4664f2c66")
-		(property "Reference" "U175"
-			(at 157.48 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "4069"
-			(at 160.02 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 166.37 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4069ubms.pdf"
-			(at 166.37 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Hex inverter"
-			(at 166.37 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "65cc44b2-afea-48bb-a206-edbf177e3dcf")
-		)
-		(pin "4"
-			(uuid "e3396605-e5f4-44f9-9a27-b133d777f297")
-		)
-		(pin "13"
-			(uuid "7f5ec81c-e9bb-40e7-8b49-6b56d90d7648")
-		)
-		(pin "6"
-			(uuid "648147f8-c59b-419b-8c99-f61be515edf0")
-		)
-		(pin "8"
-			(uuid "3ea98ca8-af96-4c63-be5e-8ffac8883ec7")
-		)
-		(pin "3"
-			(uuid "deb784e3-f8de-4ae4-9b7a-d8b02bf8df0c")
-		)
-		(pin "7"
-			(uuid "9b56485f-70dd-4b6d-b8d7-da47d839c8c8")
-		)
-		(pin "12"
-			(uuid "933380bc-b506-43cd-9ad0-1da4a8e1f916")
-		)
-		(pin "14"
-			(uuid "9df407b1-7508-4c4a-8be5-b1ef1717f54c")
-		)
-		(pin "11"
-			(uuid "1f8112a7-4562-4f7e-ab7a-f842de7383bf")
-		)
-		(pin "9"
-			(uuid "0aa427cf-9b01-4bda-a802-191bd90059ac")
-		)
-		(pin "1"
-			(uuid "83ab57af-1334-48c5-8a7c-c9340af0a617")
-		)
-		(pin "10"
-			(uuid "ebf73de1-8a66-4d2a-a517-a48fa689bd9a")
-		)
-		(pin "2"
-			(uuid "52b377d9-1b24-4621-b770-02b53f485e71")
-		)
-		(instances
-			(project "schematics"
-				(path "/1efac021-92d6-4a06-9a24-324f43ef2e7c/41bec2cb-0554-4545-a462-c7b731f22bcb"
-					(reference "U175")
-					(unit 1)
-				)
-				(path "/1efac021-92d6-4a06-9a24-324f43ef2e7c/ee9412b5-3f4d-4d26-8e91-e1a9764d02f4"
-					(reference "U15")
 					(unit 1)
 				)
 			)
